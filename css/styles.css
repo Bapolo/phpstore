@@ -1,0 +1,222 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+p 
+{
+    color: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+}
+
+.fa-solid, .fa-brands
+{
+    color: #28a745;
+}
+
+.feature-item
+{
+    margin: 2rem 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.5);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilo para o botão "hamburger" */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+figure
+ {
+    text-align: center;
+    margin: 1rem auto;
+ }
+
+.imagem-principal
+{
+    max-width: 70%;
+    display: inline-block;
+    margin: 0 auto;
+}
+/* Estilo Responsivo para mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+/* Estilos para o resto do site */
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p
+{
+   color: #fff;
+   text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que os elementos internos fiquem espaçados */
+    height: 100%; /* Mantém todos os cards com a mesma altura */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que as imagens fiquem proporcionais */
+    margin-bottom: 10px; /* Adiciona um espaço entre a imagem e o título */
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Faz com que a descrição ocupe o espaço necessário */
+}
+
+.card .btn {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.card p {
+    color: #555;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+@media (min-width: 1200px)
+{
+    main
+    {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
